@@ -1,7 +1,7 @@
-{{!-- <ul>
+<ul>
   {{#each model as |playlist|}}
     <li>
-      {{#link-to 'playlist' playlist}}
+      {{#link-to 'playlists.show' playlist}}
         {{playlist.name}}
       {{/link-to}}
     </li>
@@ -9,5 +9,6 @@
     <li>No contacts found.</li>
   {{/each}}
 </ul>
- --}}
-<h1>test</h1>
+
+{{outlet}}
+

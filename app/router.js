@@ -6,7 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
-  this.route('playlist');
+  this.route('playlists', function(){
+    this.route('show', {path: '/:playlist_id'});
+  });
 });
 
 // export default Router;
